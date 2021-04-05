@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body{
+  color:black;
+  background-color: lightblue;
+}
+.col-sm-4{
+	border-style: solid;
+}
+</style>
+</head>
+<body>
+<div class="row">
+<div class="col-sm-4">
+	<h1>update name</h1>
+	<form action="updatename" method="POST">
+		{% csrf_token %}
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>newname</label>
+		<input type="text" name="newname" /><br><br>
+        <input type="submit" value="update name"/><br>
+        {{msg0}}
+        {{msg1}}
+        {{msg2}}
+	</form>
+    </div>
+	<div class="col-sm-4">
+	<h1>update phone</h1>
+	<form action="updatephone" method="POST">
+		{% csrf_token %}
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>newnum</label>
+		<input type="text" name="newnum" /><br><br>
+        <input type="submit" value="update phone"/><br>
+        {{msg3}}
+        {{msg4}}
+        {{msg5}}
+	</form>
+</div>
+<div class="col-sm-4">
+	<h1>update address</h1>
+	<form action="updateaddress" method="POST">
+		{% csrf_token %}
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>newaddress</label>
+		<input type="text" name="newaddress" /><br><br>
+        <input type="submit" value="update address"/><br>
+        {{msg6}}
+        {{msg7}}
+        {{msg8}}
+	</form>
+    </div>
+    <div class="col-sm-4">
+	<h1>update email</h1>
+	<form action="updateemail" method="POST">
+		{% csrf_token %}
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>newemail</label>
+		<input type="text" name="newemail" /><br><br>
+        <input type="submit" value="update email"/><br>
+        {{msg9}}
+        {{msg10}}
+        {{msg11}}
+	</form>
+    </div>
+</div>
+<br>
+<br>
+<a href="loginpage"><button class="btn btn-danger" type="submit">Go Back</button></a><br>
+</body>
+</html>

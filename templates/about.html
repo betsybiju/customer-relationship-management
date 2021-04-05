@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body{
+    	height: 1000px;
+    }
+    div{
+    	margin-top: 50px;
+    	text-align: center;
+    	width: 100%;
+    }
+    .navbar-brand{
+    	font-weight: bold;
+    	font-style: italic;
+        font-size: 40px;
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light">
+		<a class="navbar-brand" href="#">JB</a>
+   		<ul class="navbar-nav">
+    	<li class="nav-item">
+      		<a class="nav-link" href="/">Back Home</a>
+    	</li>
+  		</ul>
+	</nav>
+<img src="{% static 'images/aboutus.jpg' %}" alt="no image" width="100%" height="50%">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+     <h4>Contact</h4>
+     betsybiju21@gmail.com<br>
+     +91 9656433908
+    </div>
+    <div class="col-lg-6" style="border-left: solid; text-align: center;">
+    <br>
+     JB is a crm project for the development of relationship <br>
+     between customers and bussiness partners
+    </div>
+  </div>
+</div>
+</body>
+</html>

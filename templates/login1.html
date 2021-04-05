@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+h4{
+  color:white;
+  padding-left: 20px;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color:blue;
+  width:15%;
+}
+
+.right {
+  right: 0;
+  background-color:white;
+  width:80%;
+}
+body{
+  color:black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <br>
+  <br>
+  <a href="#"><h4>Home</h4></a><br>
+  <a href="feeding"><h4>Contact</h4></a><br>
+  <a href="changepass"><h4>Change Password</h4></a><br>
+  <a href="/"><h4>Logout</h4></a><br>
+  
+</div>
+
+<div class="split right">
+  <b><i><h3>Welcome, Everyone</h3></i></b><br><br>
+   <table class="table table-striped">
+    <tr>
+    <th>Autherization And Authentication</th>
+    </tr>
+    <tr>
+    <td><a href="customerpage"><i>customers</i></a></td>
+    <td><a href="adding"><button class="btn btn-danger float-right">add</button></a></td>
+    <td><a href="editing"><button class="btn btn-danger float-right">edit</button></a></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html> 

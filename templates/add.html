@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	body{
+    		background-color: lightblue;
+    	}
+    	form{
+    		background-color: white;
+    		border-style: solid;
+    		padding: 10px;
+    	}
+    	.content {
+  			max-width: 800px;
+  			margin: auto;
+  			margin-top: 60px;	
+		}
+		h3{
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+	<h3><u><i>Add Customer</i></u></h3>
+	<div class="content">
+	<form action="addcustomer" method="POST">
+		{% csrf_token %}
+		<table>
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>address</label>
+		<input type="textarea" name="address" /><br><br>
+		<label>email</label>
+		<input type="text" name="email" /><br><br>
+		<label>phone</label>
+		<input type="textarea" name="phone" /><br><br>
+        <input type="submit" value="submit"/><br><br>
+        {{msg0}}
+    </table>
+    </form>
+    </div>
+    </body>
+</html>
+

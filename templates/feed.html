@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        form{
+            background-color: white;
+            border-style: solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static 'images/feedback.jpg' %}" alt="no ima" width="100%" >
+    <h5> Do u want to see the feedback list?<br><br>
+        <a href="display"><button class="btn btn-danger">feedback list</button></a></h5>
+	<form action="feedback1" method="POST">
+		{% csrf_token %}
+        <div class="content">
+            <h4>New Message</h4>
+		<table>
+		<label>name</label>
+		<input type="text" name="name" /><br><br>
+		<label>email</label>
+		<input type="text" name="email" /><br><br>
+		<label>phone</label>
+		<input type="text" name="phone" /><br><br>
+		<label>message</label>
+		<input type="textarea" name="message" /><br><br>
+        <input type="submit" value="submit"/><br><br>
+        {{msg0}}
+    </table>
+    </div>
+    </form>
+    </body>
+</html>
+
